@@ -1,0 +1,39 @@
+header {
+  background-color: #222;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+
+  img {
+    height: 45px;
+  }
+
+  nav {
+    display: flex;
+    gap: 20px;
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #ff6600;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+
+    nav {
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+<div class="eventos-container">
+  <h2>Próximos eventos</h2>
+  <div class="eventos-lista">
+    <div class="evento-card" *ngFor="let evento of eventos">
+      <img [src]="evento.imagen" alt="{{ evento.titulo }}">
+      <h3>{{ evento.titulo }}</h3>
+      <p>{{ evento.descripcion }}</p>
+      <small>{{ evento.fecha | date: 'longDate' }}</small>
+    </div>
+  </div>
+</div>
