@@ -1,0 +1,10 @@
+<div class="galeria">
+  <div class="foto" *ngFor="let f of fotos">
+    <img [src]="f.url" [alt]="f.descripcion" />
+    <div class="info">
+      <h3>{{ f.titulo }}</h3>
+      <p>{{ f.descripcion }}</p>
+      <span>{{ f.nombreArtista }}</span>
+    </div>
+  </div>
+</div>
